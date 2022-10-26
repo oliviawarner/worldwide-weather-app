@@ -9,6 +9,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherReportComponent } from './components/weather-report/weather-report.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WeatherReportComponent } from './components/weather-report/weather-repo
     BrowserAnimationsModule,
     MatSelectModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
