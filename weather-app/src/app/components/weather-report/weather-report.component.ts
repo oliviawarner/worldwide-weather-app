@@ -14,6 +14,7 @@ export class WeatherReportComponent implements OnInit {
   data$!: Observable<any>;
   today = new Date();
 
+
   constructor(
     private weatherService: WeatherService,
     private route: ActivatedRoute
@@ -25,7 +26,6 @@ export class WeatherReportComponent implements OnInit {
       filter(name => !!name),
       concatMap(name => this.weatherService.getWeatherForCity(name))
     );
-
   }
 
 }

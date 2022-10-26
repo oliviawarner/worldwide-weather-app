@@ -11,6 +11,9 @@
         <span>{{data.main.feels_like | number: '0.0-0'}} C</span>
       </div>
       <div class="outlook">
+        <div class="image">
+          <img src="http://openweathermap.org/img/wn/{{data.weather[0].icon}}@2x.png">
+        </div>
         <span>{{data.weather[0].description | titlecase}}</span>
       </div>
     </div>
