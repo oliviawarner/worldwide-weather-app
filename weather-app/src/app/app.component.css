@@ -2,3 +2,9 @@
   text-align: center;
   padding-top:20px;
 }
+
+#globe_search {
+  height:28px !important;
+  width:28px !important;
+  padding-right:8px;
+}
