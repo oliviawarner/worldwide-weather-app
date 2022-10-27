@@ -90,7 +90,7 @@ export class AppComponent implements OnInit, OnDestroy {
   countryControl: FormControl = new FormControl;
   cityControl: FormControl = new FormControl;
   cities$: any;
-
+  showCard = false;
 
   constructor(private router: Router) {}
 
@@ -101,6 +101,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.cityControl.valueChanges
       .subscribe(value => {
         this.router.navigate([value]);
+        this.showCard = true;
       });
     this.cities$ = this.countryControl.valueChanges.pipe(
       map(country => country.cities)

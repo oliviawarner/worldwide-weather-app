@@ -22,5 +22,7 @@
     </mat-form-field>
   </div>
   <br />
-  <router-outlet></router-outlet>
+  <div id="card_container" *ngIf="showCard">
+    <router-outlet></router-outlet>
+  </div>
 </div>
