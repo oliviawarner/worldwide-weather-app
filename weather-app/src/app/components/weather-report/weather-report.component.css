@@ -24,9 +24,9 @@ mat-card::ng-deep.mat-card-header-text {
 }
 
 .temp {
-  background: lightblue;
+  background: #004346;
   padding: 10px;
-  color: black;
+  color: white;
   margin-right: 10px;
   display: flex;
   flex-direction: column;

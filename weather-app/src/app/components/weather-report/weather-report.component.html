@@ -10,9 +10,7 @@
   <mat-card-content>
     <div class="flex-row">
       <div class="temp">
-        <span class="big-text">{{data.main.temp | number:'0.0-0'}} F</span>
-        <span>Feels like </span>
-        <span>{{data.main.feels_like | number: '0.0-0'}} F</span>
+        <span class="big-text">{{data.main.temp | number:'0.0-0'}}&deg; F</span>
       </div>
       <div class="outlook">
         <div class="image">
@@ -22,4 +20,5 @@
       </div>
     </div>
   </mat-card-content>
+  <mat-card-subtitle>Feels like {{data.main.feels_like | number: '0.0-0'}}&deg; F</mat-card-subtitle>
 </mat-card>
