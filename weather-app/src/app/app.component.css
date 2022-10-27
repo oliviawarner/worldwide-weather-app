@@ -8,3 +8,11 @@
   width:28px !important;
   padding-right:8px;
 }
+
+#country_dropdown_container {
+  padding-right:25px;
+}
+
+#dropdowns_container {
+  padding-bottom: 50px;
+}
