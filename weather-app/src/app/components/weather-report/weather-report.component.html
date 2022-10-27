@@ -5,14 +5,11 @@
   </div>
   <mat-card-header>
     <mat-card-title>{{data.name}}</mat-card-title>
-    <mat-card-subtitle>Today: {{today | date }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <div class="flex-row">
       <div class="temp">
-        <span class="big-text">{{data.main.temp | number:'0.0-0'}} F</span>
-        <span>Feels like </span>
-        <span>{{data.main.feels_like | number: '0.0-0'}} F</span>
+        <span class="big-text">{{data.main.temp | number:'0.0-0'}}&deg; F</span>
       </div>
       <div class="outlook">
         <div class="image">
@@ -22,4 +19,5 @@
       </div>
     </div>
   </mat-card-content>
+  <mat-card-subtitle>Today: {{today | date: 'MM/dd/yyyy h:mm a' }}</mat-card-subtitle>
 </mat-card>
