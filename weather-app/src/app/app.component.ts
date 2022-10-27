@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit, OnDestroy {
   title = 'weather-app';
 
-  cities = ["London", "Paris", "Moscow", "New York", "Karachi", "Sydney"];
+  cities = ["London", "Paris", "Moscow", "New York", "Karachi", "Sydney", "Pittsburgh", "Slippery Rock"];
 
   cityControl: FormControl = new FormControl;
 
