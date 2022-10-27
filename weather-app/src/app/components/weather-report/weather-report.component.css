@@ -53,10 +53,10 @@ mat-card::ng-deep.mat-card-header-text {
   font-size: 15px;
 }
 
-  /* > div {
+.loading-container {
+  padding-bottom: 15px;
+}
 
-  }
-
-  .image {
+  /* .image {
     height: 80px;
   } */
