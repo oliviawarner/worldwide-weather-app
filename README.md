@@ -10,5 +10,6 @@
 
 ## Workflows Used:
 [CodeQL](.github/workflows/codeql.yml)
+###### For more information about CodeQL click [here](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning-with-codeql#about-code-scanning-with-codeql)
 
 
