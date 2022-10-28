@@ -23,19 +23,25 @@ describe('WeatherReportComponent', () => {
     fixture = TestBed.createComponent(WeatherReportComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    jasmine.clock().install();
   });
 
   it('should create weather report component', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should populate current date', () => {
-    let mockToday = new Date();
-    expect(component.today).toEqual(mockToday);
+  it('should equal current date', () => {
+    const todayMock = new Date();
+    jasmine.clock().mockDate(todayMock);
+    expect(component.today).toEqual(todayMock);
   });
 
   it('should be initialized to false', () => {
     expect(component.showProgressBar).toEqual(false);
+  });
+
+  afterEach(() => {
+    jasmine.clock().uninstall();
   });
 
 });
