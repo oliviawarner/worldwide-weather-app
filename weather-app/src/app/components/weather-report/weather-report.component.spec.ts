@@ -12,7 +12,7 @@ describe('WeatherReportComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        HttpClientTestingModule
+        HttpClientTestingModule,
       ],
       declarations: [ WeatherReportComponent ]
     })
@@ -25,7 +25,17 @@ describe('WeatherReportComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create weather report component', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should populate current date', () => {
+    let mockToday = new Date();
+    expect(component.today).toEqual(mockToday);
+  });
+
+  it('should be initialized to false', () => {
+    expect(component.showProgressBar).toEqual(false);
+  });
+
 });
