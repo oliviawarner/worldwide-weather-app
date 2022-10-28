@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'weather-app';
+  title = 'Worldwide Weather App';
 
   countries = [
     {
