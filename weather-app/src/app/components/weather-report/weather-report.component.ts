@@ -31,7 +31,7 @@ export class WeatherReportComponent implements OnInit {
       concatMap(name => this.weatherService.getWeatherForCity(name)),
       tap(() => {
         this.showProgressBar=false;
-        console.log('test');
+        console.log('test 2');
       }),
     );
   }
