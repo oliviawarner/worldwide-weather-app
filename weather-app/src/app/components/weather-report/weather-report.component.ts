@@ -15,7 +15,7 @@ export class WeatherReportComponent implements OnInit {
   today = new Date();
   showProgressBar = false;
 
-  
+
   constructor(
     private weatherService: WeatherService,
     private route: ActivatedRoute
@@ -31,6 +31,7 @@ export class WeatherReportComponent implements OnInit {
       concatMap(name => this.weatherService.getWeatherForCity(name)),
       tap(() => {
         this.showProgressBar=false;
+        console.log('test');
       }),
     );
   }
