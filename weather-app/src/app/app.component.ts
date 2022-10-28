@@ -15,15 +15,15 @@ export class AppComponent implements OnInit, OnDestroy {
   countries = [
     {
       name: "Austrailia",
-      cities: ["Sydney", "Melbourne"]
+      cities: ["Melbourne", "Sydney"]
     },
     {
       name: "Austria",
-      cities: ["Vienna", "Linz"]
+      cities: ["Linz", "Vienna"]
     },
     {
       name: "Canada",
-      cities: ["Toronto", "Montreal", "Vancouver"]
+      cities: ["Montreal", "Toronto", "Vancouver"]
     },
     {
       name: "China",
@@ -79,11 +79,11 @@ export class AppComponent implements OnInit, OnDestroy {
     },
     {
       name: "United Kingdom",
-      cities: ["London", "Oxford", "Liverpool", "Manchester"]
+      cities: ["Liverpool", "London", "Manchester", "Oxford"]
     },
     {
       name: "United States",
-      cities: ["New York", "Las Vegas", "Los Angeles", "Miami", "Orlando", "San Francisco"]
+      cities: ["Las Vegas", "Los Angeles", "Miami", "New York", "Orlando", "San Francisco"]
     }
   ];
 
