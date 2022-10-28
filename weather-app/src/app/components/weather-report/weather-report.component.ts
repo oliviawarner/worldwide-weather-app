@@ -15,7 +15,7 @@ export class WeatherReportComponent implements OnInit {
   today = new Date();
   showProgressBar = false;
 
-
+  
   constructor(
     private weatherService: WeatherService,
     private route: ActivatedRoute
