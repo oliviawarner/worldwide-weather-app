@@ -5,10 +5,10 @@
 ## App Description:
 ##### Displays weather data for different hard-coded countries and cities.
 
-## Build & Run Configuration:
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+## Angular Build, Run, Test Configurations:
+[README.md](weather-app/README.md)
 
 ## Workflows Used:
-..* [CodeQL](.github/workflows/codeql.yml)
+[CodeQL](.github/workflows/codeql.yml)
 
 
